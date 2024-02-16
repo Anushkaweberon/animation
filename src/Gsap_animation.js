@@ -8,8 +8,8 @@ function Gsap_animation() {
   useEffect(() => {
     gsap.set(imageRef.current, { scale: 1.5 });
     gsap.to(imageRef.current, 5, { scale: 1, repeat: -1});
-    gsap.set(textRef.current, { scale: 0.5 });
-    gsap.to(textRef.current, 5, { scale: 1, repeat: -1});
+    gsap.set(textRef.current, { scale: 0.3 });
+    gsap.to(textRef.current, 5, { scale: 0.8, repeat: -1});
   }, []);
   return(
     <>
@@ -21,8 +21,8 @@ function Gsap_animation() {
             <div className="image">
               <img src='/image/praveen.png'/>
             </div>
-            <div className="text">
-              <div ref={textRef}>Beat out other buyers to Hot New Listings</div>
+            <div className="box">
+              <div ref={textRef} className='text' >Beat out other buyers to Hot New Listings</div>
             </div>
           </div>
         </div>

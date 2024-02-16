@@ -25,6 +25,7 @@
 }
 .image{
   display: flex;
+  flex: 0 0 center;
   flex-direction: column;
   align-self: flex-end;
 }
@@ -32,7 +33,7 @@ img{
   width: 175px;
   height: auto;
 }
-.text{
+.box{
   flex: 1 1 auto;
   text-align: center;
   color: #ffff00;
@@ -42,7 +43,7 @@ h6{
   font-size: 1rem;
   text-align: center;
 }
-div{
+.text{
   font-size: 7vw;
 }
 @media only screen and (max-width: 768px){
@@ -54,7 +55,7 @@ div{
   } */
 }
 @media only screen and (min-width: 576px){
-  .text div{
+  .box .text{
 	  font-size: 6vw ;
   }
 }
@@ -63,4 +64,3 @@ div{
     width: 125px;
   } 
 }
-	

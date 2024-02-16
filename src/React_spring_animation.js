@@ -7,8 +7,8 @@ function React_spring_animation() {
         config:{ duration: 5000, }
     })
     const text = useSpring({
-        from: {scale: 0.5},
-        to: {scale: 1},
+        from: {scale: 0.3},
+        to: {scale: 0.8},
         loop: true,
         config:{ duration: 5000,}        
     })
@@ -23,8 +23,8 @@ function React_spring_animation() {
             <div className="image">
               <img src='/image/praveen.png'/>
             </div>
-            <div className="text">
-              <animated.div style={text} >Beat out other buyers to Hot New Listings</animated.div>
+            <div className="box">
+              <animated.div style={text} className="text">Beat out other buyers to Hot New Listings</animated.div>
             </div>
           </div>
         </div>
