@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+.container{
+  width: 100%;
+  height: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  width: 100%;
+  height: 270px;
+  overflow: hidden;
+  position: relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.backgroundImage{
+  width: 100%;
+  height: 120%;
+  background-image: url("https://blue-weberealty.thrivebrokers.com/images/sw/banners/new/p-vip_buyer-banner.jpg");
+  background-position: center;
+  background-size: cover;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.headerContent{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+}
+.image{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-self: flex-end;
 }
-
-.App-link {
-  color: #61dafb;
+img{
+  width: 175px;
+  height: auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.text{
+  flex: 1 1 auto;
+  text-align: center;
+  color: #ffff00;
+  filter: drop-shadow(0 0 15px rgba(0,0,0,1.5));
+}
+h6{
+  font-size: 1rem;
+  text-align: center;
+}
+div{
+  font-size: 7vw;
+}
+@media only screen and (max-width: 768px){
+  .image img {
+    width: 150px;
   }
-  to {
-    transform: rotate(360deg);
+  /* .backgroundImage{
+    width: 100%;
+  } */
+}
+@media only screen and (min-width: 576px){
+  .text div{
+	  font-size: 6vw ;
   }
 }
+@media only screen and (max-width: 576px){
+   .image img{
+    width: 125px;
+  } 
+}
+	
